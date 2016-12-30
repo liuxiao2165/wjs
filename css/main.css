@@ -1,0 +1,637 @@
+
+/*
+ * 公共样式
+ */
+@font-face {
+    font-family: 'weijinsuo';
+    src: url('../font/MiFie-Web-Font.eot') format('embedded-opentype'),url('../font/MiFie-Web-Font.svg') format('svg'),url('../font/MiFie-Web-Font.ttf') format('truetype'),url('../font/MiFie-Web-Font.woff') format('woff');
+}
+
+/*以icon-开头的类或者以包含icon-的类的字体都设置成 weijinsuo*/
+[class ^= 'icon-'],[class *= ' icon-'] {
+    font-family:weijinsuo;
+    font-style: normal;
+}
+
+.icon-mobilephone::before {
+    content: '\e908';
+    font-size: 13px;
+}
+
+.icon-telephone::before {
+    content: '\e900';
+    font-size: 15px;
+}
+
+.icon-logo::before {
+    content: '\e93e';
+}
+
+.icon-icon:before {
+    content: '\e920';
+}
+
+.icon-uniE907:before {
+    content: "\e907";
+}
+
+.panel-myDefault.active::before {
+    content: "\e915";
+    font-family: weijinsuo;
+    font-size: 50px;
+    position: absolute;
+    color: whitesmoke;
+    top: -10px;
+    left: 15px;
+}
+
+
+
+/*
+ * bootstrap样式扩展
+ */
+.navbar-itcast
+{
+    background-color: #fff;
+    border-color: #e7e7e7;
+    margin-bottom: 0px;
+}
+.navbar-itcast
+.navbar-brand {
+    color: #777;
+    line-height: 58px;
+}
+.navbar-itcast
+.navbar-brand:hover,
+.navbar-itcast
+.navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+.navbar-itcast
+.navbar-text {
+    color: #777;
+}
+.navbar-itcast
+.navbar-nav > li > a {
+    color: #777;
+}
+.navbar-itcast
+.navbar-nav > li > a:hover,
+.navbar-itcast
+.navbar-nav > li > a:focus {
+    color: #333;
+    background-color: transparent;
+    border-bottom: 2px solid #ff4400;
+}
+.navbar-itcast
+.navbar-nav > .active > a,
+.navbar-itcast
+.navbar-nav > .active > a:hover,
+.navbar-itcast
+.navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #fff;
+    border-bottom: 2px solid #ff4400;
+}
+.navbar-itcast
+.navbar-nav > .disabled > a,
+.navbar-itcast
+.navbar-nav > .disabled > a:hover,
+.navbar-itcast
+.navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+.navbar-itcast
+.navbar-toggle {
+    border-color: #ddd;
+    margin-top: 24px;
+}
+.navbar-itcast
+.navbar-toggle:hover,
+.navbar-itcast
+.navbar-toggle:focus {
+    background-color: #ddd;
+}
+.navbar-itcast
+.navbar-toggle .icon-bar {
+    background-color: #888;
+}
+.navbar-itcast
+.navbar-collapse,
+.navbar-itcast
+.navbar-form {
+    border-color: #e7e7e7;
+}
+.navbar-itcast
+.navbar-nav > .open > a,
+.navbar-itcast
+.navbar-nav > .open > a:hover,
+.navbar-itcast
+.navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+    .navbar-itcast
+    .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-itcast
+    .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-itcast
+    .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+        background-color: transparent;
+    }
+    .navbar-itcast
+    .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-itcast
+    .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-itcast
+    .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+    .navbar-itcast
+    .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-itcast
+    .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-itcast
+    .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+.navbar-itcast
+.navbar-link {
+    color: #777;
+}
+.navbar-itcast
+.navbar-link:hover {
+    color: #333;
+}
+.navbar-itcast
+.btn-link {
+    color: #777;
+}
+.navbar-itcast
+.btn-link:hover,
+.navbar-itcast
+.btn-link:focus {
+    color: #333;
+}
+.navbar-itcast
+.btn-link[disabled]:hover,
+fieldset[disabled] .navbar-itcast
+.btn-link:hover,
+.navbar-itcast
+.btn-link[disabled]:focus,
+fieldset[disabled] .navbar-itcast
+.btn-link:focus {
+    color: #ccc;
+}
+
+
+
+.panel-myDefault {
+    box-shadow: 1px 1px 5px #ccc ;
+    border-radius: 0;
+}
+.panel-myDefault > .panel-heading {
+    padding: 0;
+    border-radius: 0;
+    color: #333;
+    float: right;
+    width: 120px;
+    height: 150px;
+    border-left: 1px dashed #8d8d8d;
+    position: relative;
+}
+
+.panel-myDefault > .panel-body {
+    position: relative;
+    margin-right: 110px;
+    padding: 0;
+}
+
+.panel-myDefault > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #ddd;
+}
+.panel-myDefault > .panel-heading .badge {
+    color: #f5f5f5;
+    background-color: #333;
+}
+.panel-myDefault > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #ddd;
+}
+
+
+
+
+
+/*
+ *  头部样式
+ */
+#header {
+    /*height: 300px;*/
+}
+
+#header > .topBar {
+    border-bottom: 1px solid #c7c7c7;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #767676;;
+}
+
+#header >.topBar >.container {
+    width: 100%;
+}
+
+#header .mobleLink {
+    color: #767676;;
+}
+
+#header .mobleLink:hover {
+    text-decoration: none;
+}
+
+#header .mobleLink > img {
+    display: none;
+}
+
+#header .mobleLink:hover > img {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    top: 28px;
+    z-index: 1001;
+}
+
+#header .row >.col-md-2 a {
+    color: #767676;
+    text-decoration: none;
+}
+
+#header .row >.col-md-4 button {
+    background-color: rgba(242, 50, 18, 0.9);
+}
+
+#header .row >.col-md-4 a {
+    color: #767676;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/*+号选择器表示.row下的div的后一个选择器(只有第一个没有被选中)*/
+#header .container >.row div + div {
+    border-left: 1px solid #b9b9b9;
+}
+
+
+#header >div:nth-child(2) {
+    width: 100%;
+    top: 0;
+}
+
+#header >div:nth-child(2) .navbar-header {
+    /*margin-left: -110px;*/
+}
+
+
+#header >div:nth-child(2) .navbar-brand .icon-icon {
+    font-size: 50px;
+    color: #f40;
+    vertical-align: middle;
+}
+
+#header >div:nth-child(2) .navbar-brand .icon-logo {
+    font-size: 35px;
+    vertical-align: middle;
+}
+
+
+#header >div:nth-child(2) ul li a{
+    line-height: 58px;
+    font-size: 16px;
+}
+
+/*
+ * 广告轮播图样式
+ */
+#content >.carousel >#carousel-example-generic >.carousel-inner >.item{
+    /*background-color: #1f7e9a;*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#content >.carousel >#carousel-example-generic >.carousel-inner >.item img {
+    width: 100%;
+}
+
+/* 当屏幕变成小屏幕的时候 .item的高度不再是410px 否则就会的空白区域 这时可以使用媒体查询 */
+/*当屏幕尺寸最小为768px时(当屏幕尺寸大于768px时),才会执行*/
+@media (min-width: 768px) {
+    #content >.carousel >#carousel-example-generic >.carousel-inner >.item{
+        height: 410px;
+    }
+
+}
+
+
+
+
+/**
+ * 特色介绍样式
+ */
+#content > .special {
+    padding: 30px;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+#content > .special {
+    font-size: 15px;
+    color: rgba(31, 127, 155, 0.85);
+}
+
+#content > .special i {
+    font-size: 35px;
+}
+
+#content > .special > .container > .row > div {
+    margin-top: 40px;
+
+}
+
+
+/**
+ * 立即预约样式
+ */
+#content > .appointment {
+    padding: 20px;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+#content > .appointment > .container {
+    font-size: 17px;
+}
+
+/*bootstrap的p标签默认有一个margin-bottom 10px*/
+#content > .appointment > .cotainer p {
+    margin-bottom: 0;
+}
+
+#content > .appointment > .container .pull-left span , #content > .appointment > .container .pull-left a{
+    color: rgba(242, 18, 15, 0.71);
+}
+
+#content > .appointment > .container .glyphicon {
+    margin-right: 7px;
+}
+
+#content > .appointment > .container .pull-left a {
+    border-bottom: 1px dashed red;
+    text-decoration: none;
+}
+
+
+/**
+ * 产品推荐样式
+ */
+#content > .products {
+    padding: 30px 0;
+    background-color: #f0f0f0;
+}
+
+#content > .products > .container > .ul-wapper  {
+    overflow-x: scroll;
+}
+
+#content > .products > .container > .ul-wapper > .nav {
+    padding: 0 10px;
+}
+
+#content > .products > .container > .ul-wapper > .nav li a {
+    background-color: transparent;
+    border: 0;
+    font-size: 16px;
+    color: rgba(15, 15, 15, 0.82);
+}
+
+#content > .products > .container > .ul-wapper > .nav li.active a {
+    border-bottom: 3px solid red;
+    font-size: 17px;
+}
+
+#content > .products > .container > .ul-wapper > .nav li a:hover {
+    color: black;
+}
+
+/*tab 选项卡 样式*/
+#content > .products > .container > .tab-content > .tab-pane > .row > div {
+    margin-top: 20px;
+}
+
+.panel-myDefault.active{
+    background-color: rgba(255, 0, 0, 0.82);
+}
+
+.panel-myDefault.active > .panel-heading {
+    border-left: 1px dashed #d6d6d6;
+}
+
+.panel-myDefault.active > .panel-body > h4 , .panel-myDefault.disabled > .panel-body > h4{
+    color: #eeeeee;
+}
+
+.panel-myDefault.active > .panel-body > div p , .panel-myDefault.disabled > .panel-body > div p {
+    color: #eeeeee;
+}
+
+.panel-myDefault.active > .panel-heading span , .panel-myDefault.disabled > .panel-heading span {
+    color: #eeeeee;
+}
+
+.panel-myDefault.active> .panel-heading p , .panel-myDefault.disabled> .panel-heading p {
+    color: #eeeeee;
+}
+
+.panel-myDefault.disabled{
+    background-color: #c9c9c9;
+}
+
+
+.panel-myDefault > .panel-heading::after , .panel-myDefault > .panel-heading::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    position: absolute;
+
+}
+
+
+.panel-myDefault > .panel-heading::after {
+    top: -8px;
+    left: -8px;
+}
+
+.panel-myDefault > .panel-heading::before {
+    bottom: -8px;
+    left: -8px;
+    box-shadow: 0px 1px 1px #ccc inset;
+}
+
+.panel-myDefault > .panel-body > h4 {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.panel-myDefault > .panel-body > .row div {
+    margin: 2px 15px;
+}
+
+.panel-myDefault > .panel-body > div p {
+    margin-bottom: 0;
+}
+
+.panel-myDefault > .panel-heading span {
+    position: absolute;
+    top: 28px;
+    left: 40px;
+    font-size: 40px;
+}
+
+.panel-myDefault > .panel-heading p {
+    position: absolute;
+    top: 87px;
+    left: 40px;
+    font-size: 15px;
+}
+
+.panel-myDefault > .panel-heading a {
+    position: absolute;
+    top: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.panel-myDefault > .panel-heading .tooltip-one {
+    left: 37px;
+    width: 22px;
+    border: 2px solid red;
+    color: red;
+}
+
+.panel-myDefault > .panel-heading .tooltip-two {
+    margin-left: 3px;
+    left: 60px;
+    border: 2px solid green;
+    color: green;
+    width: 22px;
+}
+
+
+
+
+/**
+ * 新闻资讯样式
+ */
+
+#content > .news {
+    padding: 30px 0;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+#content .news-title {
+    padding: 15px 0;
+    /*width: 150px;*/
+    margin-right: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 1px dashed #c0c0c0;
+    position: relative;
+}
+
+#content .news-title::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 5px;
+    border: 1px solid #c0c0c0;
+    bottom: -5px;
+    right: -10px;
+}
+
+/*当屏幕尺寸小于768px时*/
+@media (max-width: 768px) {
+    #content > .news .news-logo > ul >li {
+        float: left;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+}
+
+#content .news-logo > ul > li > a {
+    width: 56px;
+    height: 56px;
+    line-height: 49px;
+    text-align: center;
+    border-radius: 28px;
+}
+
+#content .news-logo > ul > li.active > a {
+    background-color: red;
+}
+
+#content .news-logo > ul > li.active > a > i {
+    color: whitesmoke;
+}
+
+#content .news-logo > ul > li > a > i {
+    font-size: 25px;
+    color: #c0c0c0;
+}
+
+
+
+/*
+ * 底部样式
+ */
+#footer {
+    padding: 30px 0 50px 0;
+    /*background-color: gray;*/
+}
+
+#footer ul {
+    margin-top: 20px;
+    list-style: none;
+    width: 730px;
+}
+
+#footer ul li {
+    float: left;
+    padding:0 20px;
+}
+
+#footer ul li + li {
+    border-left: 1px dashed #8c8c8c;
+    text-align: center;
+}
+
+#footer ul li a {
+    text-decoration: none;
+    font-size: 35px;
+    color: #e0e0e0;
+    display: block;
+    text-align: center;
+    /*padding:  0 20px;*/
+}
